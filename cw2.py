@@ -18,7 +18,7 @@ from tensorflow.keras.layers import Dense, Dropout, LSTM, Embedding, Bidirection
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.callbacks import EarlyStopping
 
-file_path = "/content/SemEval2017-task4-dev.subtask-A.english.INPUT.txt"
+file_path = "https://raw.githubusercontent.com/Sathwikrdy/NLPCW1/refs/heads/main/Dataset"
 
 df = pd.read_csv(file_path, delimiter="\t", header=None, names=["id", "sentiment", "text"], index_col=False)
 df.head()
